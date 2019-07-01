@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on The Naive Bayesian</title>
+    <link>https://the-naive-bayesian.github.io/posts/</link>
+    <description>Recent content in Posts on The Naive Bayesian</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 30 Jun 2019 16:09:41 -0600</lastBuildDate>
+    
+	<atom:link href="https://the-naive-bayesian.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Shape of Things to Come</title>
+      <link>https://the-naive-bayesian.github.io/posts/things-to-come/</link>
+      <pubDate>Sun, 30 Jun 2019 16:09:41 -0600</pubDate>
+      
+      <guid>https://the-naive-bayesian.github.io/posts/things-to-come/</guid>
+      <description>The Plan My plan for this blog is to focus on two main things: (1) me learning and using Go, and me learning and practicing algorithms and data structures.
+Basically, it&amp;rsquo;s intended to be a professional blog, though I reserve the right to go totally off-topic.
+My professional background is all over the place. My first &amp;lsquo;career&amp;rsquo;-type job was as an actuarial consultant for health insurance, and since then I&amp;rsquo;ve been a QA automation engineer, managed a team of QA engineers, built predictive models, and done front- and back-end development.</description>
+    </item>
+    
+    <item>
+      <title>Hello and Welcome!</title>
+      <link>https://the-naive-bayesian.github.io/posts/my-first-post/</link>
+      <pubDate>Mon, 24 Jun 2019 16:16:21 -0600</pubDate>
+      
+      <guid>https://the-naive-bayesian.github.io/posts/my-first-post/</guid>
+      <description>I&amp;rsquo;m Chris Emerson, and welcome to my shiny new blog.
+Like a lot of people, I&amp;rsquo;ve tried blogging in the past but never quite stuck with it. I&amp;rsquo;m a web developer (among other things), and up until recently I&amp;rsquo;ve been pretty narrowly focused on my career and didn&amp;rsquo;t want to spend the time to write things for the world, partly because I didn&amp;rsquo;t think I had much to say that wasn&amp;rsquo;t already being said better.</description>
+    </item>
+    
+  </channel>
+</rss>
