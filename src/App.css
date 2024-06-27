@@ -37,6 +37,7 @@
   padding: 2em;
 }
 
-.read-the-docs {
+.disclaimer {
   color: #888;
+  font-style: italic;
 }
