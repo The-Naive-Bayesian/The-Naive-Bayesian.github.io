@@ -10,12 +10,14 @@ function App() {
   return (
     <>
       <section id="center">
-        <div className="hero">
-          <h1>Lilly's Orchard</h1>
-        </div>
-        <NavButton name='Blog' url='/blog' />
-        <NavButton name='About' url='/about' />
-        <NavButton name='Contact' url='/contact' />
+        <header className="hero">
+          <a id='title' href='/'><h1>Lilly's Orchard</h1></a>
+        </header>
+        <nav className='top-nav'>
+          <NavButton name='Blog' url='/blog' />
+          <NavButton name='About' url='/about' />
+          <NavButton name='Contact' url='/contact' />
+        </nav>
       </section>
 
       <Path pattern={/blog/}>
@@ -37,7 +39,7 @@ const NavButton = ({name, url}: props) => {
     <a href={url}>
       <button
         type="button"
-        className="counter"
+        className="nav-btn"
       >
         <h3 className='link-button'>{name}</h3>
       </button>
