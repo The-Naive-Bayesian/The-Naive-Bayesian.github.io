@@ -4,6 +4,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
 
+import NavButton from './NavButton';
+import Path from './Path';
+
 function App() {
   const [url, setUrl] = useState(window.location.href);
 
@@ -23,38 +26,9 @@ function App() {
       <Path pattern={/blog/}>
         This is the blog section
       </Path>
-
       <p>Current url: {url}</p>
     </>
   )
-}
-
-interface NavButtonProps {
-    name: string;
-    url: string;
-}
-
-const NavButton = ({name, url}: props) => {
-  return (
-    <a href={url}>
-      <button
-        type="button"
-        className="nav-btn"
-      >
-        <h3 className='link-button'>{name}</h3>
-      </button>
-    </a>
-  )
-}
-
-interface PathProps {
-    children: React.Node | string;
-    pattern: RegExp;
-}
-const Path = ({children, pattern}: PathProps) => {
-  return (
-    pattern.test(window.location.href) && children
-  );
 }
 
 export default App
