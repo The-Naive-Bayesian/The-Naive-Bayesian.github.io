@@ -8,7 +8,7 @@ import NavButton from './NavButton';
 import Path from './Path';
 
 function App() {
-  const [url, setUrl] = useState(window.location.href);
+  const [url, setUrl] = useState(window.location.pathname);
 
   return (
     <>
@@ -21,11 +21,14 @@ function App() {
           <NavButton name='About' url='/about' />
           <NavButton name='Contact' url='/contact' />
         </nav>
+        <main>
+          <Path pattern={/blog/}>This is the 'blog' section</Path>
+          <Path pattern={/about/}>This is the 'about' section</Path>
+          <Path pattern={/contact/}>This is the 'contact' section</Path>
+          <Path pattern={/\/$/}>Home</Path>
+        </main>
       </section>
 
-      <Path pattern={/blog/}>
-        This is the blog section
-      </Path>
       <p>Current url: {url}</p>
     </>
   )

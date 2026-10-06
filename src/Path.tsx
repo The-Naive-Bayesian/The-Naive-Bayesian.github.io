@@ -6,7 +6,7 @@ interface PathProps {
 
 const Path = ({children, pattern}: PathProps) => {
   return (
-    pattern.test(window.location.href) && children
+    pattern.test(window.location.pathname) && children
   );
 }
 
