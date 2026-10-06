@@ -47,3 +47,21 @@
   flex-direction: row;
   gap: 25px;
 }
+
+.blog-preview-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  place-items: center;
+  flex-grow: 1;
+
+  .blog-preview-item {
+    flex: 1;
+    list-style: none;
+    width: 50%;
+
+    .blog-preview {
+      text-align: left;
+    }
+  }
+}

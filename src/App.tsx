@@ -6,9 +6,15 @@ import './App.css'
 
 import NavButton from './NavButton';
 import Path from './Path';
+import BlogPreviewList from './BlogPreviewList';
 
 function App() {
   const [url, setUrl] = useState(window.location.pathname);
+  const [previews, setPreviews] = useState([{
+    id: 1,
+    title: 'Hello, world!',
+    preview: 'Testing out writing posts on this thing. I hope it works ok! I would love to have a good place to jot down my thoughts from time to time.'
+  }])
 
   return (
     <>
@@ -22,7 +28,12 @@ function App() {
           <NavButton name='Contact' url='/contact' />
         </nav>
         <main>
-          <Path pattern={/blog/}>This is the 'blog' section</Path>
+          <Path pattern={/blog/}>
+            <>
+              <p>This is the 'blog' section</p>
+              <BlogPreviewList previews={previews} />
+            </>
+          </Path>
           <Path pattern={/about/}>This is the 'about' section</Path>
           <Path pattern={/contact/}>This is the 'contact' section</Path>
           <Path pattern={/\/$/}>Home</Path>
