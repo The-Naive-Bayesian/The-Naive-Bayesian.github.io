@@ -8,7 +8,7 @@ export interface BlogPreviewProps {
 const BlogPreview = ({id, title, preview}: BlogPreviewProps) => {
   return (
     <article className='blog-preview'>
-        <a className='blog-link' href={`/blog/posts/${id}`}> <h3 className='title'>{title}</h3> </a>
+        <a className='blog-link' href={`/blog/posts/${id}`}> <h2 className='title'>{title}</h2> </a>
         <p className='body'>{preview}</p>
     </article>
   )

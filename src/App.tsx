@@ -31,10 +31,7 @@ function App() {
         <main>
           <Path pattern={/blog/}>
             <Path pattern={/blog$/}>
-              <>
-                <p>This is the 'blog' section</p>
-                <BlogPreviewList previews={previews} />
-              </>
+              <BlogPreviewList previews={previews} />
             </Path>
             <Path pattern={/blog\/posts\/\d+/}>
               <ArticleWrapper/>

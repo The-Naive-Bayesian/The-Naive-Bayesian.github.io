@@ -11,7 +11,13 @@ const ArticleWrapper = () => {
   const postUrlPattern = /\/blog\/posts\/(?<id>\d+)/;
 
   const found = window.location.pathname.match(postUrlPattern);
-  if (!found || !found.groups) return (<h2 className='post-404'>Post not found!</h2>);
+  if (
+    !found
+      || !found.groups
+      || !found.groups['id']
+      || !found.groups['id']
+      || !articles[found.groups['id']]
+  ) return (<h2 className='post-404'>Post not found!</h2>);
   const post = articles[found.groups['id']];
 
   return (

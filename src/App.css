@@ -62,7 +62,7 @@
   .blog-preview-item {
     flex: 1;
     list-style: none;
-    width: 50%;
+    width: 65%;
 
     .blog-preview {
       text-align: left;
