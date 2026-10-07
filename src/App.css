@@ -55,6 +55,10 @@
   place-items: center;
   flex-grow: 1;
 
+  a {
+      color: var(--text-h);
+  }
+
   .blog-preview-item {
     flex: 1;
     list-style: none;
@@ -63,5 +67,22 @@
     .blog-preview {
       text-align: left;
     }
+  }
+}
+
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  place-items: center;
+  flex-grow: 1;
+  text-align: left;
+
+  .blog-post-title {
+      width: 65%;
+  }
+
+  .blog-post-body {
+      width: 65%;
   }
 }

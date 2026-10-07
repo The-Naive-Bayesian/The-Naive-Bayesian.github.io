@@ -7,6 +7,7 @@ import './App.css'
 import NavButton from './NavButton';
 import Path from './Path';
 import BlogPreviewList from './BlogPreviewList';
+import ArticleWrapper from './Article';
 
 function App() {
   const [url, setUrl] = useState(window.location.pathname);
@@ -29,10 +30,15 @@ function App() {
         </nav>
         <main>
           <Path pattern={/blog/}>
-            <>
-              <p>This is the 'blog' section</p>
-              <BlogPreviewList previews={previews} />
-            </>
+            <Path pattern={/blog$/}>
+              <>
+                <p>This is the 'blog' section</p>
+                <BlogPreviewList previews={previews} />
+              </>
+            </Path>
+            <Path pattern={/blog\/posts\/\d+/}>
+              <ArticleWrapper/>
+            </Path>
           </Path>
           <Path pattern={/about/}>This is the 'about' section</Path>
           <Path pattern={/contact/}>This is the 'contact' section</Path>
