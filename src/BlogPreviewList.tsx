@@ -7,17 +7,20 @@ interface BlogPreviewListProps {
 
 const BlogPreviewList = ({previews}: BlogPreviewListProps) => {
   return (
-    <ul className='blog-preview-list'>
-      {
-        previews.map(
-          ({id, title, preview}) => (
-            <li key={id} className='blog-preview-item'>
-              <BlogPreview  id={id} title={title} preview={preview} />
-            </li>
+    <article className='blog-preview'>
+      <h2 className='page-header'>Posts</h2>
+      <ul className='blog-preview-list'>
+        {
+          previews.map(
+            ({id, title, preview}) => (
+              <li key={id} className='blog-preview-item'>
+                <BlogPreview  id={id} title={title} preview={preview} />
+              </li>
+            )
           )
-        )
-      }
-    </ul>
+        }
+      </ul>
+    </article>
   )
 };
 

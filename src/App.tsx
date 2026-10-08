@@ -8,6 +8,8 @@ import NavButton from './NavButton';
 import Path from './Path';
 import BlogPreviewList from './BlogPreviewList';
 import ArticleWrapper from './Article';
+import About from './About';
+import Contact from './Contact';
 
 function App() {
   const [url, setUrl] = useState(window.location.pathname);
@@ -37,8 +39,8 @@ function App() {
               <ArticleWrapper/>
             </Path>
           </Path>
-          <Path pattern={/about/}>This is the 'about' section</Path>
-          <Path pattern={/contact/}>This is the 'contact' section</Path>
+          <Path pattern={/about/}><About /></Path>
+          <Path pattern={/contact/}><Contact /></Path>
           <Path pattern={/\/$/}>Home</Path>
         </main>
       </section>
