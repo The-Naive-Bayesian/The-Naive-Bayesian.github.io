@@ -1,7 +1,4 @@
 import {useEffect, useState} from 'react';
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
 
 import NavButton from './NavButton';
@@ -12,8 +9,8 @@ import About from './About';
 import Contact from './About';
 
 function App() {
-  const [url, setUrl] = useState(window.location.pathname);
-  const [previews, setPreviews] = useState([{
+  const [url, _] = useState(window.location.pathname);
+  const [previews, _] = useState([{
     id: 1,
     title: 'Hello, world!',
     preview: 'Testing out writing posts on this thing. I hope it works ok! I would love to have a good place to jot down my thoughts from time to time.'
