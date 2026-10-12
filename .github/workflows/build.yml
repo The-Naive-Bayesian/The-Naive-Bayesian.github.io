@@ -5,6 +5,9 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
+            - name: Checkout
+              id: checkout
+              uses: actions/checkout@v7
             - name: Compile project
               id: build
               run: npm run build
