@@ -8,6 +8,9 @@ jobs:
             - name: Checkout
               id: checkout
               uses: actions/checkout@v7
+            - name: Install dependencies
+              id: install
+              run: npm install
             - name: Compile project
               id: build
               run: npm run build
