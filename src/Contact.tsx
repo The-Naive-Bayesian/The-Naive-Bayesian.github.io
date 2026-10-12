@@ -2,8 +2,7 @@ const Contact = () => {
   return (
     <article className='contact-content'>
       <h2 className='page-header'>Contact Me</h2>
-      <p>This is where the 'Contact' page content will go.</p>
-      <p>My email and probably a social link or something.</p>
+      <p>Until I get a separate email set up, feel free to reach out to me on Bluesky, where I am <a href="https://bsky.app/profile/lllly.bsky.social">@lllly.bsky.social</a></p>
     </article>
   );
 }
