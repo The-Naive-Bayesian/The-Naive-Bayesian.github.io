@@ -9,7 +9,6 @@ import About from './About';
 import Contact from './Contact';
 
 function App() {
-  const [url] = useState(window.location.pathname);
   const [previews] = useState([{
     id: 1,
     title: 'Hello, world!',
@@ -42,8 +41,6 @@ function App() {
           <Path pattern={/\/$/}>Home</Path>
         </main>
       </section>
-
-      <p>Current url: {url}</p>
     </>
   )
 }
