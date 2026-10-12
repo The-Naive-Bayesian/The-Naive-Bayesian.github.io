@@ -4,7 +4,7 @@ interface NavButtonProps {
     url: string;
 }
 
-const NavButton = ({name, url}: props) => {
+const NavButton = ({name, url}: NavButtonProps) => {
   return (
     <a href={url}>
       <button

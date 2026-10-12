@@ -1,6 +1,7 @@
+import type {JSX} from 'react';
 
 interface PathProps {
-    children: React.Node | string;
+    children: JSX.Element | JSX.Element[] | string;
     pattern: RegExp;
 }
 

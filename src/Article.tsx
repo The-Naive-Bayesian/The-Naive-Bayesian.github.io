@@ -1,4 +1,3 @@
-import {useContext} from 'react';
 import {articles} from './data/articles.ts'
 
 interface ArticleProps {

@@ -9,8 +9,8 @@ import About from './About';
 import Contact from './About';
 
 function App() {
-  const [url, _] = useState(window.location.pathname);
-  const [previews, _] = useState([{
+  const [url] = useState(window.location.pathname);
+  const [previews] = useState([{
     id: 1,
     title: 'Hello, world!',
     preview: 'Testing out writing posts on this thing. I hope it works ok! I would love to have a good place to jot down my thoughts from time to time.'
