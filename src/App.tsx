@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
@@ -9,7 +9,7 @@ import Path from './Path';
 import BlogPreviewList from './BlogPreviewList';
 import ArticleWrapper from './Article';
 import About from './About';
-import Contact from './Contact';
+import Contact from './About';
 
 function App() {
   const [url, setUrl] = useState(window.location.pathname);
@@ -23,7 +23,7 @@ function App() {
     <>
       <section id="center">
         <header className="hero">
-          <a id='title' href='/'><h1>Lilly's Orchard</h1></a>
+          <a id='title' href='/blog'><h1>Lilly's Orchard</h1></a>
         </header>
         <nav className='top-nav'>
           <NavButton name='Blog' url='/blog' />
@@ -31,6 +31,7 @@ function App() {
           <NavButton name='Contact' url='/contact' />
         </nav>
         <main>
+          <Path pattern={/\/$/}><Home /></Path>
           <Path pattern={/blog/}>
             <Path pattern={/blog$/}>
               <BlogPreviewList previews={previews} />
@@ -48,6 +49,15 @@ function App() {
       <p>Current url: {url}</p>
     </>
   )
+}
+
+const Home = () => {
+  function redirectToBlog() {
+    window.location.replace("/blog");
+  }
+
+  useEffect(redirectToBlog);
+  return (null);
 }
 
 export default App
