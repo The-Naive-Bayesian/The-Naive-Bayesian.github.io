@@ -6,7 +6,7 @@ import Path from './Path';
 import BlogPreviewList from './BlogPreviewList';
 import ArticleWrapper from './Article';
 import About from './About';
-import Contact from './About';
+import Contact from './Contact';
 
 function App() {
   const [url] = useState(window.location.pathname);
