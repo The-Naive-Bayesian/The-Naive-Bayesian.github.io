@@ -17,7 +17,9 @@ jobs:
               run: npm install
             - name: Compile project
               id: build
-              run: npm run build
+              run: |
+                npm run build
+                cp dist/index.html dist/404.html
             - name: Upload static files
               id: deploy
               uses: actions/upload-pages-artifact@v3
